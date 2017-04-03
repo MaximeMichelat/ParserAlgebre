@@ -17,5 +17,4 @@ typedef struct Lexeme
 
 Vector* lex(const char*);  //découpe la chaine de caractère en une liste de lexemes (identifier les identifiants/characteres)
 void lexeme_free(Lexeme*);
-Lexeme* lexeme_new_character(char);
-Lexeme* lexeme_new_identifier(char*);
+Lexeme* lexeme_new(char*, int);
